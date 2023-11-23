@@ -7,7 +7,6 @@ import senac.com.br.Projeto.Integrador.useCases.clientes.domanis.ClientesRespons
 
 import java.util.List;
 
-@Business
 public interface ClientesBusiness {
     List<ClientesResponseDom> carregarClientes();
     ClientesResponseDom criarCliente(ClientesRequestDom clientesRequestDom) throws Exception;
