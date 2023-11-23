@@ -28,16 +28,16 @@ public class ClientesServiceImpl implements ClientesService {
 
     @Override
     public ClientesResponseDom atualizarClientes(Long id, ClientesRequestDom clientesRequestDom) throws ProFutException {
-        return null;
+        return clientesBusiness.atualizarClientes(id, clientesRequestDom);
     }
 
     @Override
     public void deletarCliente(Long id) {
-
+        clientesBusiness.deletarCliente(id);
     }
 
     @Override
     public ClientesResponseDom carregarClienteById(Long id) throws ProFutException {
-        return null;
+        return clientesBusiness.carregarClienteById(id);
     }
 }
