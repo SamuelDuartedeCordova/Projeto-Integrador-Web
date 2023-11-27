@@ -28,6 +28,51 @@ public class PedidosItens {
     @JoinColumn(name = "produto_id", nullable = false)
     private Produtos produtoId;
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
 
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public double getValorUnitario() {
+        return valorUnitario;
+    }
+
+    public void setValorUnitario(double valorUnitario) {
+        this.valorUnitario = valorUnitario;
+    }
+
+    public LocalDateTime getDeleted_at() {
+        return deleted_at;
+    }
+
+    public void setDeleted_at(LocalDateTime deleted_at) {
+        this.deleted_at = deleted_at;
+    }
+
+    public Pedidos getPedidoId() {
+        return pedidoId;
+    }
+
+    public void setPedidoId(Pedidos pedidoId) {
+        this.pedidoId = pedidoId;
+    }
+
+    public Produtos getProdutoId() {
+        return produtoId;
+    }
+
+    public void setProdutoId(Produtos produtoId) {
+        this.produtoId = produtoId;
+    }
 }

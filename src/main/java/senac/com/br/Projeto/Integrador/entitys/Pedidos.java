@@ -25,6 +25,14 @@ public class Pedidos {
     @Column
     private LocalDateTime deleted_at;
 
+    @ManyToOne
+    @JoinColumn(name = "cliente_id", nullable = false)
+    private Clientes cliente;
+
+    @ManyToOne
+    @JoinColumn(name = "endereco_id", nullable = false)
+    private Enderecos endereco;
+
     public Long getId() {
         return id;
     }
@@ -63,5 +71,21 @@ public class Pedidos {
 
     public void setDeleted_at(LocalDateTime deleted_at) {
         this.deleted_at = deleted_at;
+    }
+
+    public Clientes getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Clientes cliente) {
+        this.cliente = cliente;
+    }
+
+    public Enderecos getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Enderecos endereco) {
+        this.endereco = endereco;
     }
 }
