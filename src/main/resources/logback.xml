@@ -10,13 +10,13 @@
     </appender>
 
     <appender name="FileLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${PATH_LOGS}/api-teste-solid.log</file>
+        <file>${PATH_LOGS}/pro_fut.log</file>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <Pattern>%d %p %C [%t] %msg %n</Pattern>
         </encoder>
 
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy" >
-            <fileNamePattern>${PATH_LOGS}/api-teste-solid_%d{yyyy-MM-dd}.zip</fileNamePattern>
+            <fileNamePattern>${PATH_LOGS}/pro_fut_%d{yyyy-MM-dd}.zip</fileNamePattern>
             <maxHistory>15</maxHistory>
         </rollingPolicy>
     </appender>
