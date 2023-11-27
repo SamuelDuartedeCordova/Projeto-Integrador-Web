@@ -7,8 +7,8 @@ import org.hibernate.annotations.Where;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-@Entity(name = "pedido")
-@SQLDelete(sql = "UPDATE pedido SET deleted_at = now() WHERE id=?")
+@Entity(name = "pedidos")
+@SQLDelete(sql = "UPDATE pedidos SET deleted_at = now() WHERE id=?")
 @Where(clause = "deleted_at is null")
 public class Pedidos {
 

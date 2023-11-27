@@ -6,7 +6,7 @@ import org.hibernate.annotations.Where;
 
 import java.time.LocalDateTime;
 
-@Entity(name = "pedido_itens")
+@Entity(name = "pedidos_itens")
 @SQLDelete(sql = "UPDATE pedidos_itens SET deleted_at = now() WHERE id=?")
 @Where(clause = "deleted_at is null")
 public class PedidosItens {
@@ -21,10 +21,10 @@ public class PedidosItens {
     private double valorUnitario;
     @Column
     private LocalDateTime deleted_at;
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "pedido_id", nullable = false)
     private Pedidos pedidoId;
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "produto_id", nullable = false)
     private Produtos produtoId;
 

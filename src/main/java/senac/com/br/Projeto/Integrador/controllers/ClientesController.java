@@ -25,7 +25,7 @@ public class ClientesController {
     @Autowired
     ClientesServiceImpl clientesService;
 
-    @GetMapping("/carregar")
+    @GetMapping(path = "/carregar")
     @LogRest
     public ResponseEntity<List<ClientesResponseDom>> carregarClientes(){
         return ResponseEntity.ok(clientesService.carregarClientes());

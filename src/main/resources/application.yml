@@ -5,7 +5,7 @@ spring:
       ddl-auto: update
     show-sql: true
   datasource:
-    url: jdbc:postgresql://localhost:5432/pro-fut
+    url: jdbc:postgresql://localhost:5432/pro_fut
     password: postgres
     username: postgres
     driverClassName: org.postgresql.Driver
