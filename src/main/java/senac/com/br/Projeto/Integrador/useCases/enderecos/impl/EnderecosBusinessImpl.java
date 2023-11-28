@@ -111,7 +111,7 @@ public class EnderecosBusinessImpl implements EnderecosBusiness {
             messages.add("Campo estado não informado ou invalido!");
         }
         if(endereco.getNumero() < 1){
-            messages.add("Campo estado não informado ou invalido!");
+            messages.add("Campo número não informado ou invalido!");
         }
 
         if(endereco.getClienteId() == null || endereco.getClienteId() < 1){

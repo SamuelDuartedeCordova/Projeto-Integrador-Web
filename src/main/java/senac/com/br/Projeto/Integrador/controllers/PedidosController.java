@@ -33,6 +33,12 @@ public class PedidosController {
         return ResponseEntity.ok(out);
     }
 
+//    @GetMapping("/carregar/{id}") fazer service e business dps
+//    @LogRest
+//    public ResponseEntity<PedidosResponseDom> carregarPedidoById(@PathVariable Long id){
+//
+//    }
+
     @PostMapping("/criar")
     @LogRest
     public ResponseEntity<?> criarPedidos(@RequestBody PedidosRequestDom pedido){

@@ -9,8 +9,8 @@ import java.util.List;
 
 public interface ClientesService {
      List<ClientesResponseDom> carregarClientes();
-     ClientesResponseDom criarCliente(ClientesRequestDom clientesRequestDom) throws Exception;
-     ClientesResponseDom atualizarClientes(Long id, ClientesRequestDom clientesRequestDom) throws ProFutException;
+     ClientesResponseDom criarCliente(ClientesRequestDom cliente) throws Exception;
+     ClientesResponseDom atualizarClientes(Long id, ClientesRequestDom cliente) throws ProFutException;
      void deletarCliente(Long id);
      ClientesResponseDom carregarClienteById(Long id) throws ProFutException;
 

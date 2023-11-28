@@ -22,13 +22,13 @@ public class ClientesServiceImpl implements ClientesService {
     }
 
     @Override
-    public ClientesResponseDom criarCliente(ClientesRequestDom clientesRequestDom) throws Exception {
+    public ClientesResponseDom criarCliente(ClientesRequestDom clientesRequestDom) throws ProFutException {
         return clientesBusiness.criarCliente(clientesRequestDom);
     }
 
     @Override
-    public ClientesResponseDom atualizarClientes(Long id, ClientesRequestDom clientesRequestDom) throws ProFutException {
-        return clientesBusiness.atualizarClientes(id, clientesRequestDom);
+    public ClientesResponseDom atualizarClientes(Long id, ClientesRequestDom cliente) throws ProFutException {
+        return clientesBusiness.atualizarClientes(id, cliente);
     }
 
     @Override

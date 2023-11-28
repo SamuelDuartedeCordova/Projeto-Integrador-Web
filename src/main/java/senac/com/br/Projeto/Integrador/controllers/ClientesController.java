@@ -47,7 +47,7 @@ public class ClientesController {
 
         try{
             return ResponseEntity.status(HttpStatus.CREATED).body(clientesService.criarCliente(clientesRequestDom));
-        } catch (Exception e) {
+        } catch (ProFutException e) {
             e.printStackTrace();
             return ResponseEntity.badRequest().body(ResponseUtil.responseMapper(e.getMessage()));
         }

@@ -1,67 +1,86 @@
-2023-11-27 20:31:57,349 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoIntegradorApplication using Java 20 with PID 8084 (C:\Users\User\Documents\Projeto-Integrador-backend\target\classes started by User in C:\Users\User\Documents\Projeto-Integrador-backend) 
-2023-11-27 20:31:57,363 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default" 
-2023-11-27 20:32:02,981 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
-2023-11-27 20:32:03,765 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 716 ms. Found 11 JPA repository interfaces. 
-2023-11-27 20:32:09,343 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http) 
-2023-11-27 20:32:10,038 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 12107 ms 
-2023-11-27 20:32:12,487 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default] 
-2023-11-27 20:32:13,047 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final 
-2023-11-27 20:32:13,064 INFO org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer 
-2023-11-27 20:32:14,896 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer 
-2023-11-27 20:32:15,075 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting... 
-2023-11-27 20:32:16,262 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@473847fb 
-2023-11-27 20:32:16,272 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed. 
-2023-11-27 20:32:16,498 WARN org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
-2023-11-27 20:32:23,673 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
-2023-11-27 20:32:24,379 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default' 
-2023-11-27 20:32:27,552 INFO org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used. 
-2023-11-27 20:32:55,598 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoIntegradorApplication using Java 20 with PID 10048 (C:\Users\User\Documents\Projeto-Integrador-backend\target\classes started by User in C:\Users\User\Documents\Projeto-Integrador-backend) 
-2023-11-27 20:32:55,611 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default" 
-2023-11-27 20:33:00,326 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
-2023-11-27 20:33:01,020 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 649 ms. Found 11 JPA repository interfaces. 
-2023-11-27 20:33:05,812 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http) 
-2023-11-27 20:33:05,856 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"] 
-2023-11-27 20:33:05,870 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat] 
-2023-11-27 20:33:05,871 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15] 
-2023-11-27 20:33:06,558 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext 
-2023-11-27 20:33:06,566 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 10396 ms 
-2023-11-27 20:33:07,860 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default] 
-2023-11-27 20:33:08,157 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final 
-2023-11-27 20:33:08,170 INFO org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer 
-2023-11-27 20:33:09,816 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer 
-2023-11-27 20:33:09,959 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting... 
-2023-11-27 20:33:11,045 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b5de9ac 
-2023-11-27 20:33:11,055 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed. 
-2023-11-27 20:33:11,272 WARN org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
-2023-11-27 20:33:17,158 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
-2023-11-27 20:33:17,847 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default' 
-2023-11-27 20:33:20,248 INFO org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used. 
-2023-11-27 20:33:24,595 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
-2023-11-27 20:33:27,023 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"] 
-2023-11-27 20:33:27,405 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path '' 
-2023-11-27 20:33:27,467 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoIntegradorApplication in 34.247 seconds (process running for 37.817) 
-2023-11-27 20:35:11,604 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default' 
-2023-11-27 20:35:11,614 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated... 
-2023-11-27 20:35:11,666 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed. 
-2023-11-27 20:35:25,280 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoIntegradorApplication using Java 20 with PID 7916 (C:\Users\User\Documents\Projeto-Integrador-backend\target\classes started by User in C:\Users\User\Documents\Projeto-Integrador-backend) 
-2023-11-27 20:35:25,294 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default" 
-2023-11-27 20:35:29,509 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
-2023-11-27 20:35:30,235 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 658 ms. Found 11 JPA repository interfaces. 
-2023-11-27 20:35:34,689 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http) 
-2023-11-27 20:35:34,733 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"] 
-2023-11-27 20:35:34,747 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat] 
-2023-11-27 20:35:34,749 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15] 
-2023-11-27 20:35:35,347 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext 
-2023-11-27 20:35:35,354 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 9740 ms 
-2023-11-27 20:35:36,541 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default] 
-2023-11-27 20:35:36,851 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final 
-2023-11-27 20:35:36,864 INFO org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer 
-2023-11-27 20:35:38,705 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer 
-2023-11-27 20:35:38,904 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting... 
-2023-11-27 20:35:40,242 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@43786627 
-2023-11-27 20:35:40,251 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed. 
-2023-11-27 20:35:40,466 WARN org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
-2023-11-27 20:35:46,914 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
-2023-11-27 20:35:47,580 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default' 
-2023-11-27 20:35:49,731 INFO org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used. 
-2023-11-27 20:35:55,322 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-11-28 19:13:10,375 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoIntegradorApplication using Java 20 with PID 9620 (C:\Users\User\Documents\Projeto-Integrador-backend\target\classes started by User in C:\Users\User\Documents\Projeto-Integrador-backend) 
+2023-11-28 19:13:10,471 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default" 
+2023-11-28 19:13:14,417 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-11-28 19:13:15,081 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 589 ms. Found 11 JPA repository interfaces. 
+2023-11-28 19:13:19,001 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http) 
+2023-11-28 19:13:19,041 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"] 
+2023-11-28 19:13:19,056 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat] 
+2023-11-28 19:13:19,078 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.15] 
+2023-11-28 19:13:19,632 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext 
+2023-11-28 19:13:19,638 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 8907 ms 
+2023-11-28 19:13:20,617 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-11-28 19:13:21,255 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final 
+2023-11-28 19:13:21,273 INFO org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer 
+2023-11-28 19:13:23,203 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer 
+2023-11-28 19:13:23,354 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting... 
+2023-11-28 19:13:24,581 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2905b568 
+2023-11-28 19:13:24,589 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed. 
+2023-11-28 19:13:24,914 WARN org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+2023-11-28 19:13:29,761 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2023-11-28 19:13:30,649 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-11-28 19:13:32,367 INFO org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used. 
+2023-11-28 19:13:35,368 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-11-28 19:13:37,110 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"] 
+2023-11-28 19:13:37,216 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path '' 
+2023-11-28 19:13:37,251 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoIntegradorApplication in 28.897 seconds (process running for 32.506) 
+2023-11-28 19:14:20,042 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-11-28 19:14:20,045 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet' 
+2023-11-28 19:14:20,057 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 9 ms 
+2023-11-28 19:14:20,902 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-2] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.ClientesController.criarCliente(ClientesRequestDom) 
+2023-11-28 19:14:20,907 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-2] Request: senac.com.br.Projeto.Integrador.useCases.clientes.domanis.ClientesRequestDom@5f2b326a 
+2023-11-28 19:14:20,923 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-2] Response: <400 BAD_REQUEST Bad Request,{messages=null},[]> 
+2023-11-28 19:15:20,032 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-3] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.ClientesController.criarCliente(ClientesRequestDom) 
+2023-11-28 19:15:20,034 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-3] Request: senac.com.br.Projeto.Integrador.useCases.clientes.domanis.ClientesRequestDom@d651806 
+2023-11-28 19:15:20,036 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-3] Response: <201 CREATED Created,senac.com.br.Projeto.Integrador.useCases.clientes.domanis.ClientesResponseDom@418e01b3,[]> 
+2023-11-28 19:17:13,843 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-7] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.EnderecosController.carregarEnderecos() 
+2023-11-28 19:17:13,845 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-7] Request: null 
+2023-11-28 19:17:13,846 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-7] Response: <200 OK OK,[],[]> 
+2023-11-28 19:20:13,806 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-9] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.EnderecosController.criarEndereco(EnderecosRequestDom) 
+2023-11-28 19:20:13,807 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-9] Request: senac.com.br.Projeto.Integrador.useCases.enderecos.domanis.EnderecosRequestDom@5db23f36 
+2023-11-28 19:20:13,808 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-9] Response: <201 CREATED Created,senac.com.br.Projeto.Integrador.useCases.enderecos.domanis.EnderecosResponseDom@2b4a9f37,[]> 
+2023-11-28 19:20:26,534 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-1] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.ClientesController.carregarClientes() 
+2023-11-28 19:20:26,535 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-1] Request: null 
+2023-11-28 19:20:26,536 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-1] Response: <200 OK OK,[senac.com.br.Projeto.Integrador.useCases.clientes.domanis.ClientesResponseDom@12ce57f9, senac.com.br.Projeto.Integrador.useCases.clientes.domanis.ClientesResponseDom@653cda77],[]> 
+2023-11-28 19:20:39,854 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-2] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.ClientesController.carregarClienteById(Long) 
+2023-11-28 19:20:39,856 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-2] Request: 1 
+2023-11-28 19:20:39,860 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-2] Response: <200 OK OK,senac.com.br.Projeto.Integrador.useCases.clientes.domanis.ClientesResponseDom@5589217c,[]> 
+2023-11-28 19:25:03,773 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-5] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.ClientesController.carregarClienteById(Long) 
+2023-11-28 19:25:03,777 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-5] Request: 1 
+2023-11-28 19:25:03,778 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-5] Response: <200 OK OK,senac.com.br.Projeto.Integrador.useCases.clientes.domanis.ClientesResponseDom@2d8bf0c7,[]> 
+2023-11-28 19:28:36,772 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-8] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.PedidosController.carregarPedidos() 
+2023-11-28 19:28:36,773 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-8] Request: null 
+2023-11-28 19:28:36,775 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-8] Response: <200 OK OK,[],[]> 
+2023-11-28 19:30:42,555 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-1] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.PedidosItensController.carregarPedidosItens() 
+2023-11-28 19:30:42,556 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-1] Request: null 
+2023-11-28 19:30:42,558 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-1] Response: <200 OK OK,[],[]> 
+2023-11-28 19:31:58,186 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-3] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.ProdutosController.carregarProdutos() 
+2023-11-28 19:31:58,187 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-3] Request: null 
+2023-11-28 19:31:58,188 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-3] Response: <200 OK OK,[],[]> 
+2023-11-28 19:34:52,651 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-7] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.ProdutosController.criarProdutos(ProdutosRequestDom) 
+2023-11-28 19:34:52,652 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-7] Request: senac.com.br.Projeto.Integrador.useCases.produtos.domanis.ProdutosRequestDom@6ff5fec1 
+2023-11-28 19:34:52,653 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-7] Response: <201 CREATED Created,senac.com.br.Projeto.Integrador.useCases.produtos.domanis.ProdutosResponseDom@5e274ffa,[]> 
+2023-11-28 19:34:59,540 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-8] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.ProdutosController.carregarProdutos() 
+2023-11-28 19:34:59,542 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-8] Request: null 
+2023-11-28 19:34:59,543 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-8] Response: <200 OK OK,[senac.com.br.Projeto.Integrador.useCases.produtos.domanis.ProdutosResponseDom@586b0d19],[]> 
+2023-11-28 19:36:38,482 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-1] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.ProdutosController.atualizarProdutos(Long,ProdutosRequestDom) 
+2023-11-28 19:36:38,483 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-1] Request: 1 
+2023-11-28 19:36:38,485 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-1] Response: <400 BAD_REQUEST Bad Request,{messages=[Produto informado não possui nome!]},[]> 
+2023-11-28 19:37:31,383 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-4] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.ProdutosController.atualizarProdutos(Long,ProdutosRequestDom) 
+2023-11-28 19:37:31,384 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-4] Request: 1 
+2023-11-28 19:37:31,385 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-4] Response: <200 OK OK,senac.com.br.Projeto.Integrador.useCases.produtos.domanis.ProdutosResponseDom@f0255be,[]> 
+2023-11-28 19:37:38,222 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-3] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.ProdutosController.carregarProdutos() 
+2023-11-28 19:37:38,223 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-3] Request: null 
+2023-11-28 19:37:38,225 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-3] Response: <200 OK OK,[senac.com.br.Projeto.Integrador.useCases.produtos.domanis.ProdutosResponseDom@32971539],[]> 
+2023-11-28 19:44:53,280 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2023-11-28 19:40:00": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '2023-11-28 19:40:00' could not be parsed at index 10] 
+2023-11-28 19:48:25,318 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-10] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.PedidosController.criarPedidos(PedidosRequestDom) 
+2023-11-28 19:48:25,328 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-10] Request: PedidosRequestDom{id=null, dataCriacao=2023-11-28T19:40, dataEntrega=2023-12-05, valorDesconto=50.0, clienteId=1, enderecoId=1} 
+2023-11-28 19:48:25,331 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-10] Response: <500 INTERNAL_SERVER_ERROR Internal Server Error,{messages=Erro não mapeado:not-null property references a null or transient value : senac.com.br.Projeto.Integrador.entitys.Pedidos.endereco},[]> 
+2023-11-28 20:11:14,487 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-9] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.EnderecosController.carregarEnderecos() 
+2023-11-28 20:11:14,555 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-9] Request: null 
+2023-11-28 20:11:14,572 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-9] Response: <200 OK OK,[senac.com.br.Projeto.Integrador.useCases.enderecos.domanis.EnderecosResponseDom@2d34d2aa],[]> 
+2023-11-28 20:11:39,091 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-2] Metodo: ResponseEntity senac.com.br.Projeto.Integrador.controllers.PedidosController.criarPedidos(PedidosRequestDom) 
+2023-11-28 20:11:39,099 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-2] Request: PedidosRequestDom{id=null, dataCriacao=2023-11-28T19:40, dataEntrega=2023-12-05, valorDesconto=50.0, clienteId=1, enderecoId=1} 
+2023-11-28 20:11:39,100 WARN senac.com.br.Projeto.Integrador.frameWork.annotions.LogRestAspect [http-nio-8080-exec-2] Response: <500 INTERNAL_SERVER_ERROR Internal Server Error,{messages=Erro não mapeado:not-null property references a null or transient value : senac.com.br.Projeto.Integrador.entitys.Pedidos.endereco},[]> 
+2023-11-28 20:15:13,283 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-11-28 20:15:13,362 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated... 
+2023-11-28 20:15:13,398 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed. 
