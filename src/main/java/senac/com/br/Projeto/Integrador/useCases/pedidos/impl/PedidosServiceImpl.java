@@ -36,4 +36,9 @@ public class PedidosServiceImpl implements PedidosService {
     public void deletarPedido(Long id) {
         pedidosBusiness.deletarPedido(id);
     }
+
+    @Override
+    public PedidosResponseDom carregarPedidoById(Long id) throws ProFutException {
+        return pedidosBusiness.carregarPedidoById(id);
+    }
 }

@@ -33,4 +33,9 @@ public class EnderecosServiceImpl implements EnderecosService {
     public void deletarEndereco(Long id) {
         enderecosBusiness.deletarEndereco(id);
     }
+
+    @Override
+    public EnderecosResponseDom carregarEnderecoById(Long id) throws ProFutException {
+        return enderecosBusiness.carregarEnderecoById(id);
+    }
 }

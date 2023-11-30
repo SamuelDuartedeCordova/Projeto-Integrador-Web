@@ -11,4 +11,5 @@ public interface EnderecosService {
     EnderecosResponseDom criarEndereco(EnderecosRequestDom endereco) throws ProFutException;
     EnderecosResponseDom atualizarEndereco(Long id, EnderecosRequestDom endereco) throws ProFutException;
     void deletarEndereco(Long id);
+    EnderecosResponseDom carregarEnderecoById(Long id) throws ProFutException;
 }

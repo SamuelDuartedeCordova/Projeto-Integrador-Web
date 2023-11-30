@@ -33,6 +33,16 @@ public class EnderecosController {
         return ResponseEntity.ok(out);
     }
 
+    @GetMapping("/carregar/{id}")
+    @LogRest
+    public ResponseEntity<EnderecosResponseDom> carregarEnderecoById(@PathVariable Long id){
+        try {
+            return ResponseEntity.ok(enderecosService.carregarEnderecoById(id));
+        }catch (ProFutException e){
+            throw new RuntimeException(e);
+        }
+    }
+
     @PostMapping("/criar")
     @LogRest
     public ResponseEntity<?> criarEndereco(@RequestBody EnderecosRequestDom endereco){

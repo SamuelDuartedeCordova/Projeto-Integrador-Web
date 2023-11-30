@@ -91,6 +91,11 @@ public class PedidosBusinessImpl implements PedidosBusiness {
         pedidosRepository.deleteById(id);
     }
 
+    @Override
+    public PedidosResponseDom carregarPedidoById(Long id) throws ProFutException {
+        return null;
+    }
+
     public List<String> validacaoPedido(PedidosRequestDom pedido) {
         List<String> messages = new ArrayList<>();
 

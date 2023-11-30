@@ -11,4 +11,5 @@ public interface PedidosService {
     PedidosResponseDom criarPedidos(PedidosRequestDom pedido) throws ProFutException;
     PedidosResponseDom atualizarPedidos(Long id, PedidosRequestDom pedido) throws ProFutException;
     void deletarPedido(Long id);
+    PedidosResponseDom carregarPedidoById(Long id) throws ProFutException;
 }

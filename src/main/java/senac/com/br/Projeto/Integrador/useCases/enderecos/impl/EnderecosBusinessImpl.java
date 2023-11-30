@@ -92,6 +92,20 @@ public class EnderecosBusinessImpl implements EnderecosBusiness {
         enderecosRepository.deleteById(id);
     }
 
+    @Override
+    public EnderecosResponseDom carregarEnderecoById(Long id) throws ProFutException {
+        Optional<Enderecos> enderecos = enderecosRepository.findById(id);
+
+        if(!enderecos.isPresent()){
+            throw new ProFutException("Endereco não encontrado!");
+        }
+
+        Enderecos enderecos1 = enderecos.get();
+        EnderecosResponseDom out = EnderecosMapper.enderecosToEnderecosResponseDom(enderecos1);
+
+        return out;
+    }
+
     private List<String> validacaoManutencaoEndereco(EnderecosRequestDom endereco){
         List<String> messages = new ArrayList<>();
 
