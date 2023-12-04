@@ -17,6 +17,6 @@ spring:
             enable: 'true'
           auth: 'true'
     host: smtp.gmail.com
-    username: guilhermevmachado558@gmail.com
-    password: "icgz npsb ezma xual"
+    username: samuelduartedecordova@gmail.com
+    password: "kvis iizy jwpl stit"
     port: '587'
