@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import senac.com.br.Projeto.Integrador.entitys.Clientes;
 import senac.com.br.Projeto.Integrador.frameWork.annotions.LogRest;
 import senac.com.br.Projeto.Integrador.frameWork.utils.ProFutException;
 import senac.com.br.Projeto.Integrador.frameWork.utils.ResponseUtil;
@@ -13,7 +14,9 @@ import senac.com.br.Projeto.Integrador.useCases.clientes.domanis.ClientesRespons
 import senac.com.br.Projeto.Integrador.useCases.clientes.impl.ClientesServiceImpl;
 import senac.com.br.Projeto.Integrador.useCases.clientes.impl.repositorys.ClientesRepository;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/clientes")
@@ -24,6 +27,8 @@ public class ClientesController {
 
     @Autowired
     ClientesServiceImpl clientesService;
+
+
 
     @GetMapping(path = "/carregar")
     @LogRest

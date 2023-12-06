@@ -109,15 +109,15 @@ public class ClientesBusinessImpl implements ClientesBusiness {
         List<String> messages = new ArrayList<>();
 
         if(StringUtil.validarString(cliente.getNome())){
-            messages.add("Cliente informado não possui nome!");
+            messages.add("Campo sobrenome está vazio ou invalido!");
         }
 
         if(StringUtil.validarString(cliente.getSobreNome())){
-            messages.add("Cliente informado não possui sobrenome!");
+            messages.add("Campo sobrenome está vazio ou invalido!");
         }
 
         if(StringUtil.validarString(cliente.getEmail())){
-            messages.add("Cliente informado não possui email");
+            messages.add("Campo email está vazio ou invalido!");
         }
 
         return messages;
