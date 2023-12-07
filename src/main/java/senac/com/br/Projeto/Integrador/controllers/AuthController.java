@@ -9,7 +9,7 @@ import senac.com.br.Projeto.Integrador.frameWork.annotions.LogRest;
 import senac.com.br.Projeto.Integrador.useCases.clientes.impl.repositorys.ClientesRepository;
 
 @RestController
-public class AuthController extends ClientesController{
+public class AuthController {
 
     @Autowired
     private ClientesRepository clientesRepository;
