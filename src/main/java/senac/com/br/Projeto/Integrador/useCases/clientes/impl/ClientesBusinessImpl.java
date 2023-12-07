@@ -2,7 +2,6 @@ package senac.com.br.Projeto.Integrador.useCases.clientes.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import senac.com.br.Projeto.Integrador.entitys.Clientes;
-import senac.com.br.Projeto.Integrador.entitys.Enderecos;
 import senac.com.br.Projeto.Integrador.frameWork.annotions.Business;
 import senac.com.br.Projeto.Integrador.frameWork.utils.ProFutException;
 import senac.com.br.Projeto.Integrador.frameWork.utils.StringUtil;
@@ -10,7 +9,6 @@ import senac.com.br.Projeto.Integrador.useCases.clientes.ClientesBusiness;
 import senac.com.br.Projeto.Integrador.useCases.clientes.domanis.ClientesRequestDom;
 import senac.com.br.Projeto.Integrador.useCases.clientes.domanis.ClientesResponseDom;
 import senac.com.br.Projeto.Integrador.useCases.clientes.impl.mappers.ClientesMapper;
-import senac.com.br.Projeto.Integrador.useCases.clientes.impl.repositorys.ClientesEnderecosRepository;
 import senac.com.br.Projeto.Integrador.useCases.clientes.impl.repositorys.ClientesRepository;
 
 import java.util.ArrayList;
@@ -24,8 +22,7 @@ public class ClientesBusinessImpl implements ClientesBusiness {
     @Autowired
     private ClientesRepository clientesRepository;
 
-    @Autowired
-    private ClientesEnderecosRepository clientesEnderecosRepository;
+
 
     @Override
     public List<ClientesResponseDom> carregarClientes() {
@@ -98,9 +95,7 @@ public class ClientesBusinessImpl implements ClientesBusiness {
     public ClientesResponseDom carregarClienteById(Long id) throws ProFutException {
         Clientes cliente = clientesRepository.findById(id).get();
 
-        List<Enderecos> enderecos = clientesEnderecosRepository.carregarEnderecoByClienteId(id);
-
-        ClientesResponseDom out = ClientesMapper.clientesToClientesResponseDom(cliente, enderecos);
+        ClientesResponseDom out = ClientesMapper.clientesToClientesResponseDom(cliente);
 
         return out;
     }

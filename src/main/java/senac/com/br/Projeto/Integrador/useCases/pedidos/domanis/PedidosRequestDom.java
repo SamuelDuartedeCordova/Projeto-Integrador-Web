@@ -10,7 +10,6 @@ public class PedidosRequestDom {
     private LocalDate dataEntrega;
     private Double valorDesconto;
     private Long clienteId;
-    private Long enderecoId;
 
     public Long getId() {
         return id;
@@ -52,13 +51,6 @@ public class PedidosRequestDom {
         this.clienteId = clienteId;
     }
 
-    public Long getEnderecoId() {
-        return enderecoId;
-    }
-
-    public void setEnderecoId(Long enderecoId) {
-        this.enderecoId = enderecoId;
-    }
 
     @Override
     public String toString() {
@@ -68,7 +60,6 @@ public class PedidosRequestDom {
                 ", dataEntrega=" + dataEntrega +
                 ", valorDesconto=" + valorDesconto +
                 ", clienteId=" + clienteId +
-                ", enderecoId=" + enderecoId +
                 '}';
     }
 }

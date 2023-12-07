@@ -29,9 +29,6 @@ public class Pedidos {
     @JoinColumn(name = "cliente_id", nullable = false)
     private Clientes cliente;
 
-    @ManyToOne
-    @JoinColumn(name = "endereco_id", nullable = false)
-    private Enderecos endereco;
 
     public Long getId() {
         return id;
@@ -81,11 +78,4 @@ public class Pedidos {
         this.cliente = cliente;
     }
 
-    public Enderecos getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(Enderecos endereco) {
-        this.endereco = endereco;
-    }
 }

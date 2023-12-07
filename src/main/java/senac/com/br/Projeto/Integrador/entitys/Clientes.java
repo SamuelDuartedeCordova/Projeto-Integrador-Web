@@ -25,6 +25,19 @@ public class Clientes {
     @Column
     private LocalDateTime deleted_at;
 
+    public Clientes(Long id, String nome, String sobrenome, String email, String senha, LocalDateTime deleted_at) {
+        this.id = id;
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.email = email;
+        this.senha = senha;
+        this.deleted_at = deleted_at;
+    }
+
+    public Clientes() {
+
+    }
+
     public Long getId() {
         return id;
     }

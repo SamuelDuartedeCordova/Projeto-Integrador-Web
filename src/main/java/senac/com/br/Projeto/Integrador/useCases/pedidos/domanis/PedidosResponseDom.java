@@ -15,7 +15,6 @@ public class PedidosResponseDom {
 
     private Long clienteId;
 
-    private Long enderecoId;
 
     public Long getId() {
         return id;
@@ -57,11 +56,4 @@ public class PedidosResponseDom {
         this.clienteId = clienteId;
     }
 
-    public Long getEnderecoId() {
-        return enderecoId;
-    }
-
-    public void setEnderecoId(Long enderecoId) {
-        this.enderecoId = enderecoId;
-    }
 }

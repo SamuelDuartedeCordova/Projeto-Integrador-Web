@@ -6,30 +6,31 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import senac.com.br.Projeto.Integrador.entitys.Clientes;
 import senac.com.br.Projeto.Integrador.frameWork.annotions.LogRest;
+import senac.com.br.Projeto.Integrador.useCases.clientes.AuthService;
 import senac.com.br.Projeto.Integrador.useCases.clientes.impl.repositorys.ClientesRepository;
 
 @RestController
-public class AuthController extends ClientesController{
+public class AuthController{
 
     @Autowired
     private ClientesRepository clientesRepository;
 
+    @Autowired
+    private AuthService authService;
+
     @PostMapping("/registro")
     @LogRest
-    public String registrarUsuario(@RequestParam String email, String senha){
-        Clientes novoCliente = new Clientes();
-        novoCliente.setEmail(email);
-        novoCliente.setSenha(senha);
-        clientesRepository.save(novoCliente);
+    public String registrarUsuario(@RequestParam String nome, @RequestParam String sobreNome, @RequestParam String email, @RequestParam String senha){
 
-        return "Cliente registrado com sucesso!";
+        return authService.registrar(nome, sobreNome, email, senha);
     }
 
     @PostMapping("/login")
     @LogRest
-    public String autenticarUsuario(@RequestParam String email, @RequestParam String senha){
-        Clientes clienteExistente = clientesRepository.findByEmail(email).orElse(null);
-        if (clienteExistente != null && clienteExistente.getSenha().equals(senha)){
+    public String autenticar(@RequestParam String email, @RequestParam String senha){
+        Clientes clienteExistente = clientesRepository.findByEmail(email);
+        if (authService.autenticar(email, senha)){
+
             return "Login bem-sucedido!";
         }else {
             return "Credenciais inválidas!";

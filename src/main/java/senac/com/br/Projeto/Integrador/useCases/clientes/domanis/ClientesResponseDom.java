@@ -10,7 +10,6 @@ public class ClientesResponseDom {
     private String email;
     private String senha;
 
-    private List<ClientesEnderecosResponseDom> enderecos;
 
     public Long getId() {
         return id;
@@ -52,11 +51,4 @@ public class ClientesResponseDom {
         this.senha = senha;
     }
 
-    public List<ClientesEnderecosResponseDom> getEnderecos() {
-        return enderecos;
-    }
-
-    public void setEnderecos(List<ClientesEnderecosResponseDom> enderecos) {
-        this.enderecos = enderecos;
-    }
 }

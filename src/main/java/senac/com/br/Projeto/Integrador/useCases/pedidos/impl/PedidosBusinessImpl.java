@@ -105,9 +105,6 @@ public class PedidosBusinessImpl implements PedidosBusiness {
         if(pedido.getClienteId() == null || pedido.getClienteId() < 1) {
             messages.add("ClienteId não informado ou valor invalido!");
         }
-        if (pedido.getEnderecoId() == null || pedido.getEnderecoId() < 1){
-            messages.add("EnderecoId não informado ou valor invalido!");
-        }
 
         return messages;
     }
